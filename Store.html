@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fav icon -->
+  <link rel="shortcut icon" href="img/favicon (1).ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon (1).ico" type="image/x-icon">
+  <title>Maresias Store</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;700&family=Oswald:wght@300;500;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="card.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg primary-bg-color py-4 px-2 " id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/MaresiasStore.png" alt="Maresias" id="logo"></a>
+          <div id="navbar-items">
+            <form class="d-flex" id="search-form">
+              <input class="form-control me-2" type="search" placeholder="Oque você procura?" aria-label="Search">
+              <button class="btn secondary-bg-color" type="submit" id="lupa"><i class="bi bi-search primary-color"></i></button>
+            </form>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-person"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-heart"></i>
+                </a>
+                <span class="qty-info">5</span>
+              </li>
+              <li class="nav-item" id="bag-item">
+                <a class="nav-link" href="#">
+                  <i class="bi bi-bag"></i>
+                  <b>R$ 1290,12</b>
+                </a>
+                <span class="qty-info">8</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-expand-lg p-2" id="bottom-navbar-container">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bottom-navbar" aria-controls="bottom-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse justify-content-center" id="bottom-navbar">
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="navlink">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Produtos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Promoções
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- FIM NAVBAR -->
+      <!--BANNER-->
+      <div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="img\bannerpraia.jpg">
+              <img src="img/bannermobile.jpg" alt="banner" id="banner">
+            </picture>
+      </div>
+      <!--CATEGORIAS-->
+      <div class="container" id="categorias">
+        <h3>CATEGORIAS</h3>
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-6 col-lg-2" id="categoria-1">
+            <a href="#" id="categoria">Biquinis e Maiôs</a>
+          </div>
+          <div class="col-12 col-lg-2" id="categoria-2">
+            <a href="#" id="categoria">Surf</a>
+          </div>
+          <div class="col-12 col-lg-2" id="categoria-3">
+            <a href="#" id="categoria">Kids</a>
+          </div>
+          <div class="col-12 col-lg-2" id="categoria-4">
+            <a href="#" id="categoria">Sungas e Bermudas</a>
+          </div>
+          <div class="col-12 col-lg-2" id="categoria-5">
+            <a href="#" id="categoria">Coleções Óculos de Sol</a>
+          </div>
+          <div class="col-12 col-lg-2" id="categoria-6">
+            <a href="#" id="categoria">Esporte</a>
+          </div>
+          <div class="col-12 col-lg-2" id="categoria-7">
+            <a href="#" id="categoria">Variedades</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <picture>
+          <source media="(min-width: 768px)" srcset="img\pixbanner.jpg">
+          <img src="img/pixbannermobile1.jpg" alt="banner" id="pix">
+        </picture>
+      </div>
+    <!--MAIS VENDIDOS-->
+  <div class="container">
+    <h3>MAIS VENDIDOS</h3>
+    <div class="row">
+      <div class="col-12 col-md-3">
+        <div class="card"id="cardproduto">
+          <img src="img/oculosazul.png" id="produtofoto" onclick="mudaImagem(2);">
+          <div class="row" id="cores">
+            <button id="botao" onclick="img1();" style="background-color: rgb(0, 195, 255);"></button>
+            <button id="botao" onclick="img2();" style="background-color: rgb(214, 52, 52);"></button>
+            <button id="botao" onclick="img3();" style="background-color: rgb(111, 184, 39);">
+            </button>
+          </div>
+          <div class="card-body">
+            <p class="card-category secondary-color">Coleções Óculos de Sol</p>
+            <h6 class="card-title">Retro Rewind Espelhado</h6>
+            <p class="card-text"><strong id="preco">R$119,99</strong><br> a vista ou 6x de R$20,66</p>
+            <a href="#" class="btn btn-success" id="botaocompra"><i class="bi bi-cart4">Adicionar ao Carrinho</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card" id="cardproduto">
+          <img src="img/bermudaanimalprint.png" id="produtofoto2" onclick="mudaImagem();">
+          <div class="row" id="cores">
+            <button id="botao" onclick="img4();" style="background-color:#CC3399"></button>
+            <button id="botao" onclick="img5();" style="background-color:#BC5C2E"></button>
+            <button id="botao" onclick="img6();" style="background-color:#AC9165"></button>
+          </div>
+          <div class="card-body">
+            <p class="card-category secondary-color">Moda Masculina</p>
+            <h6 class="card-title">Bermuda Animal Print</h6>
+            <p class="card-text"><strong id="preco">R$149,99</strong><br> a vista ou 6x de R424,89</p>
+            <a href="#" class="btn btn-success" id="botaocompra"><i class="bi bi-cart4"> Adicionar ao Carrinho</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card" id="cardproduto">
+          <img src="img/biquiniverde.png" id="produtofoto">
+          <div class="row" id="cores">
+            <button id="botao" onclick="img7();" style="background-color:#549c37"></button>
+            <button id="botao" onclick="img8();" style="background-color:#802762" disabled></button>
+          </div>
+          <div class="card-body">
+            <p class="card-category secondary-color">Moda Feminina</p>
+            <h6 class="card-title">Biquíni Candy 2022</h6>
+            <p class="card-text"><strong id="preco">R$79,99</strong><br> a vista ou 6x de R$13,33</p>
+            <a href="#" class="btn btn-success" id="botaocompra"><i class="bi bi-cart4"> Adicionar ao Carrinho</i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3">
+        <div class="card"id="cardproduto">
+          <img src="img/chapeusunset.png" id="produtofoto">
+          <div class="row">
+            <p>Versão Única</p>
+          </div>
+          <div class="card-body">
+            <p class="card-category secondary-color">Variedades</p>
+            <h6 class="card-title">
+              Chapéu de Palha Lord</h6>
+            <p class="card-text"><strong id="preco">R$139,99</strong><br> a vista ou 6x de R$24,89</p>
+            <a href="#" class="btn btn-success col-md-3" id="botaocompra"><i class="bi bi-cart4"> Adicionar ao Carrinho</i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--NEWSLETTER-->
+  <div class="col-12 col-md-9" id="newsletter">
+    <div class="row align-items-center" id="form">
+        <div class="col-md-6 order-md-2">
+          <h5>COLEÇÕES E DESCONTOS</h5>
+          <p id="news">Quer saber todas as novidades, lançamentos e vantagens exclusivas de nossa loja? Pode ficar de boa que a gente te envia!</p>
+            <form>
+                  <div class="row col-12" id="formform">
+                    <div class="form-floating mb-3 col-lg-6">
+                      <input type="name" class="form-control" id="nome" placeholder="Digite seu nome">
+                      <label for="nome" class="form-label">Nome Completo</label>
+                    </div>
+                    <div class="form-floating mb-3 col-lg-6">
+                      <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                      <label for="email" class="form-label">Digite o seu e-mail</label>
+                    </div>
+                    <input type="submit" class="btn btn-dark col-12" value="CADASTRAR">
+                  </div>
+            </form>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <div class="col-12">
+                <div class="col-12">
+                    <img src="img/undraw_relaxation_-1-_wbr7.svg" alt="Moça na Praia" class="img-fluid" id="praiasvg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+<div class="row col-12">
+  <div class="col-6 col-lg-offset-2 col-lg-6" id="logodiv">
+      <img src="img/MaresiasStore.png" alt="logo" id="logofooter">
+    </div>
+    <div class="row col-6 col-lg-6" id="social-icons-container">
+      <h4 class="col-7 col-lg-7" id="redes">Siga-nos nas Redes Sociais:</h4>
+      <div class="col-1 col-lg-1">
+          <a href="#"><i class="bi bi-facebook secundary-color"></i></a>
+      </div>
+      <div class="col-1 col-lg-1">
+          <a href="#"><i class="bi bi-instagram secundary-color"></i></a>
+      </div>
+      <div class="col-1 col-lg-1">
+          <a href="#"><i class="bi bi-twitter secundary-color"></i></a>
+      </div>
+    </div>
+</div>
+</footer>
+</body>
